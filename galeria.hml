@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galéria - InfinityNetwork</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0d1117;
+            color: #f0f0f0;
+        }
+        header {
+            background: rgba(22, 27, 34, 0.9);
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #76ff03;
+        }
+        nav {
+            display: flex;
+        }
+        nav a {
+            color: #f0f0f0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #76ff03;
+        }
+        .content {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .content h2 {
+            font-size: 2.5rem;
+            color: #76ff03;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #161b22;
+            color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>InfinityNetwork</h1>
+        <nav>
+            <a href="index.html">Főoldal</a>
+            <a href="informaciok.html">Információk</a>
+            <a href="#contact">Kapcsolat</a>
+        </nav>
+    </header>
+    <div class="content">
+        <h2>Galéria</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300" alt="Szerver kép 1">
+            <img src="https://via.placeholder.com/300" alt="Szerver kép 2">
+            <img src="https://via.placeholder.com/300" alt="Szerver kép 3">
+            <img src="https://via.placeholder.com/300" alt="Szerver kép 4">
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 InfinityNetwork. Minden jog fenntartva.</p>
+    </footer>
+</body>
+</html>
